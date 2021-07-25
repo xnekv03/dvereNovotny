@@ -50,6 +50,7 @@ build-iPhoneSimulator/
 
 ## Environment normalization:
 /.bundle/
+/.idea
 /vendor/bundle
 /lib/bundler/man/
 
