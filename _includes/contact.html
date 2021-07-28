@@ -3,22 +3,22 @@
         <div class="container">
             {% unless site.facebook_username == %}
             <a id="contact-button" href="https://m.me/{{site.facebook_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
+               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+               target="_blank">
                 <i class="fab fa-facebook-messenger"></i>Ping me on Messenger
             </a>
             {% endunless %}
             {% unless site.email == %}
             <a id="contact-button" href="mailto:{{site.email}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
+               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+               target="_blank">
                 <i class="fas fa-envelope"></i>Pošlete mi e-mail
             </a>
             {% endunless %}
             {% unless site.twitter_username == %}
             <a id="contact-button" href="https://www.twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
+               class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+               target="_blank">
                 <i class="fab fa-twitter"></i>Tweet me on Twitter
             </a>
             {% endunless %}
@@ -31,38 +31,31 @@
             IČO: {{site.author-ico}}
             </br>
             telefon: {{site.author-telefon}}
-            <div class="column is-full is-size-3">
-                <iframe style="border:none" src="https://frame.mapy.cz/s/darunapoka" width="800" height="560" frameborder="0"></iframe>
-<!--                {% unless site.facebook_username == %}-->
-<!--                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.twitter_username == %}-->
-<!--                <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.instagram_username ==  %}-->
-<!--                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.linkedin_username ==  %}-->
-<!--                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.github_username ==  %}-->
-<!--                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.youtube_channel_id ==  %}-->
-<!--                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.reddit_username ==  %}-->
-<!--                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.behance_username ==  %}-->
-<!--                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.dribbble_username ==  %}-->
-<!--                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i></a>-->
-<!--                {% endunless %}-->
-<!--                {% unless site.spotify_username ==  %}-->
-<!--                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i></a>-->
-<!--                {% endunless %}-->
+
+            <div class="mt-4">
+                <div class="d-lg-none">
+
+                    <a href="{{site.author-mapa}}" target="_blank">
+                        <button type="button" class="btn btn-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path>
+                                <path fill-rule="evenodd"
+                                      d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path>
+                            </svg>
+                            Mapa
+                        </button>
+                    </a>
+
+
+                </div>
+                <div class="d-none d-lg-block">
+                    <iframe style="border:none" src="{{site.author-mapa}}" width="800" height="560"
+                            frameborder="0"></iframe>
+                </div>
+
+
             </div>
         </div>
     </div>
