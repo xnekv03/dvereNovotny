@@ -18,7 +18,7 @@ site-keywords: Okna, dveře, Novotný, Velešín
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+#heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -41,13 +41,16 @@ google-analytics: UA-163806439-1
 disqus-shortname: thedevslot
 
 # Name of the Author
-author-name: Vojtěch Nekvapil
+author-name: Filip Novotný
 # URL for the Image of the Author
 author-image: https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png
 # 60 Words About the Author
 author-about: V oboru se pohybuji již více než 20 let, mám za sebou mnoho úspěšných zakázek, jak pro velké firmy XXX YYY ZZZ, tak i pro malé podniky jako jsou .........  ale i jednotlivce. Pracuji po celé ČR atd atd atd tady něco doplnit
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://appfactory.cz
+author-ico: 74171941
+author-telefon: +420 777 163 708
+author-adresa: U Přehrady 562, 382 32, Velešín
 
 # SASS
 sass:
